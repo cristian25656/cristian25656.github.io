@@ -1,0 +1,20 @@
+.none {
+        display: flex;             
+        justify-content: flex-end; 
+        list-style: none;          
+        gap: 10px;                 
+        padding: 0; 
+        border-radius: 20px;           
+}
+.none li:first-child {
+    margin-right: auto;
+}
+.por {  
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight:bold;
+        box-shadow: 2px 2px 5px (#fad9a6);
+        height: 2vmax;
+        padding: 0 1vmax; 
+        background-color: #fad9a6;
+}

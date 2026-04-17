@@ -1,0 +1,12 @@
+body {background-color: blanchedalmond;
+ color: black;
+ font-family: 'Roboto', sans-serif;
+ min-height: 100vh;
+ padding: 10px;
+}
+.logomascota {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1f2937; 
+    letter-spacing: -1px;
+}

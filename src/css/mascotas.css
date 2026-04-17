@@ -1,0 +1,20 @@
+.nono { display: flex;             
+        justify-content: flex-end; 
+        list-style: none;          
+        color: #fad9a6; 
+        border-radius: 20px;
+        font-size: 0.9rem;
+        font-weight:bold;
+        box-shadow: 2px 2px 5px (#fad9a6);
+        height: 2vmax;
+        padding: 0 1vmax;     
+}
+.nono li:first-child {
+    margin-right: auto;
+}
+#mismascotas { display: flex;
+     justify-content: first baseline;
+}
+#cloe { display: flex;
+        justify-content: end;
+}
