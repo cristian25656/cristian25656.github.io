@@ -1,12 +1,13 @@
 #sobremi {
     display: flex;
-    padding: 10px;
-    margin: 20px;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    
+    border-radius: 20px;
+    background-color: darkgray;
+    padding: 19px;
+    margin: 40px;
+    gap: 150px;
 }
-#sobremi p{ max-width: 400px;
+#sobremi p{ max-width: 300px;
             text-align: left;
 }

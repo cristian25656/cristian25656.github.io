@@ -4,20 +4,14 @@
     border-radius: 10%;
     flex-shrink: 0;
     box-shadow: 4px 4px 10px rgba(0,0,0,1);
+    height: 300px;
+    width: 240px;
 }
 #imagenuno:hover { 
-    
         transform: scale(1.05);        
         outline: 1px solid rgb(0,0,0); 
 }
-
-.mascotas { cursor: pointer;
-            transition: transform 0.3s ease, outline 0.2s ease;
-            border-radius: 10%;
-            flex-shrink: 0;
-            box-shadow: 4px 4px 10px rgba(0,0,0,1);
-}
-.mascotas:hover{ 
-                   transform: scale(1.05);       
-                   outline: 1px solid rgb(0,0,0); 
+.imagenhabilidades {
+    width: 100px;
+    height: 100px;
 }

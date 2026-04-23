@@ -2,7 +2,8 @@ body {background-color: blanchedalmond;
  color: black;
  font-family: 'Roboto', sans-serif;
  min-height: 100vh;
- padding: 10px;
+ padding: 0px;
+ margin: 0px;
 }
 .logomascota {
     font-size: 1.8rem;

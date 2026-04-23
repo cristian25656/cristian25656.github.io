@@ -18,9 +18,8 @@
     <link rel="stylesheet" href="src/css/img.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/formularios.css">
-    <link rel="shortcut icon"
-        href="public/icons/maletin.png"
-        type="image/x-icon">
+    <link rel="stylesheet" href="src/css/habilidades.css">
+    <link rel="shortcut icon" href="public/icons/maletin.png" type="image/x-icon">
 </head>
 
 <body>
@@ -30,63 +29,72 @@
                 <li>
                     <h2> Cristian David Del Castillo Ruiz </h2>
                 </li>
-                <li><button class="por"type="button"style="width: 6vmax; height: 2vmax;" onclick="location.href='#sobremi'">Inicio</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;" onclick="location.href='#proyecto'">Proyectos</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;" >Servicios</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;" onclick="location.href='#contacto'">contacto</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmas;" onclick="location.href='mascotas.html'">Mascotas</button></li>
+                <li><button class="por" type="button" style="width: 6vmax; height: 2vmax;"
+                        onclick="location.href='#sobremi'">Inicio</button></li>
+                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
+                        onclick="location.href='#containerhabilidades'">Habilidades</button></li>
+                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;">Servicios</button></li>
+                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
+                        onclick="location.href='#contacto'">contacto</button></li>
+                <li><button class="por" type="button" style="width: 8vmax; height: 2vmas;"
+                        onclick="location.href='mascotas.html'">Mascotas</button></li>
             </ul>
         </nav>
-        <hr>  
     </header>
 
     <main>
-            <section id="sobremi">
-
-                    <p> Mi nombre es <strong>Cristian Del Castillo</strong>
-                        soy un <span style="color: rgb(206, 26, 26);">desarrollador</span>
-                        junior de 23 años apasionado por la tecnología y el
-                        aprendizaje constante. He trabajado en diversos proyectos que forman parte de mi portafolio, donde
-                        he
-                        aplicado habilidades en desarrollo web, lógica de programación y resolución de problemas. Me
-                        caracterizo
-                        por ser curioso, disciplinado y siempre dispuesto a mejorar, buscando oportunidades para crecer
-                        profesionalmente y aportar valor en cada proyecto en el que participo.
-                    </p>
-                    <img id="imagenuno" src="public/img/my.jpeg" alt="Foto de perfil" width="200">
-            </section>
-        
-        <article id="proyecto">
-            <h2>Proyectos</h2>
-            <div>
-            <h3>python</h3>
-             <img src="public/icons/pythonlogo.png" alt="logo de python" width="70">
-            </div>
-            <div>
-            <h3>Html</h3>
-            <img src="public/icons/htmllogo.png" alt="logo de html" width="70">
-            </div>
-            <div>
-            <h3>CSS</h3>
-            <img src="public/icons/csslogo.png" alt="logo de css" width="70">
-            </div> 
-            <div>
-                <h3>Javascrip</h3>
-                <img src="public/icons/javascriplogo.png" alt="logo de Javascrip" width="70">
-            </div> 
-
-        </article>
-        
+        <section id="sobremi">
+            <p> Mi nombre es <strong>Cristian Del Castillo</strong>
+                soy un <span style="color: rgb(206, 26, 26);">desarrollador</span>
+                junior de 23 años apasionado por la tecnología y el
+                aprendizaje constante. He trabajado en diversos proyectos que forman parte de mi portafolio, donde
+                he
+                aplicado habilidades en desarrollo web, lógica de programación y resolución de problemas. Me
+                caracterizo
+                por ser curioso, disciplinado y siempre dispuesto a mejorar, buscando oportunidades para crecer
+                profesionalmente y aportar valor en cada proyecto en el que participo.
+            </p>
+            <img id="imagenuno" src="public/img/my.jpeg" alt="Foto de perfil" width="200">
         </section>
 
-         
+    <section class="containerhabilidades"> 
+        <h2 id="containerhabilidades">Habilidades</h2>
+        <section class="habilidades">
+            <article class="habilidadesdiv">
+                <p> <strong>Python</strong> <br>
+                    Desarrollo scripts y automatizaciones en Python, aplicando estructuras de control y gestión de
+                    errores para crear soluciones lógicas, eficientes y robustas.</p>
+                <img src="public/icons/pythonlogo.png" alt="logo de python" class="imagenhabilidades">
+            </article>
 
+            <article class="habilidadesdiv">
+                <img src="public/icons/html5.png" alt="logo de html" class="imagenhabilidades">
+                <p><strong>Html</strong> <br>
+                    Estructuro proyectos web con HTML5 semántico, priorizando la accesibilidad y la optimización para
+                    motores de búsqueda (SEO) desde la arquitectura base.</p>
+            </article>
+            <article class="habilidadesdiv">
+                <img src="public/icons/csslogo.png" alt="logo de css" class="imagenhabilidades">
+                <p> <strong>CSS</strong> <br>
+                    Transformo interfaces mediante CSS3, utilizando Flexbox y Grid para crear diseños responsivos,
+                    armoniosos y visualmente atractivos que se adaptan a cualquier dispositivo.</p>
+            </article>
+            <article class="habilidadesdiv">
+                <p> <strong>Javascrip</strong> <br>
+                    Aporto interactividad mediante JavaScript, manipulando el DOM y gestionando eventos para crear
+                    interfaces dinámicas que responden de manera intuitiva y fluida al usuario.</p>
+                <img src="public/icons/javascriplogo.png" alt="logo de Javascrip" class="imagenhabilidades">
+            </article>
+
+        </section>
+    </section>
 
         <section>
 
             <ul>
                 <li>
-                    <a href="https://listado.mercadolibre.com.co/pastor-aleman" target="_blank" rel="noopener noreferrer">Inicio</a>
+                    <a href="https://listado.mercadolibre.com.co/pastor-aleman" target="_blank"
+                        rel="noopener noreferrer">Inicio</a>
                 </li>
                 <li>
                     <a href="">Proyectos</a>
@@ -97,8 +105,8 @@
             </ul>
         </section>
 
-           
-        <div class="formulario">
+
+        <section class="formulario">
             <p id="contacto">Contacto:</p>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
@@ -117,15 +125,16 @@
                 <textarea name="Comentario" id="Comentario" placeholder="Escribe aqui..." required></textarea>
                 <button type="submit">Enviar</button>
             </form>
-        </div>
+        </section>
 
     </main>
 
-    <footer class="footer">
+    <footer>
         <div class="footerdos">
-            <strong>Cristian Del Castillo</strong>
-            <p>Diseñando el futuro, línea por línea.</p>
+            <strong style="margin: 2px;">Cristian Del Castillo</strong>
+            <p style="margin: 2px;">Diseñando el futuro, línea por línea.</p>
         </div>
+
         <div class="footeruno">
             <a href="https://github.com/cristian25656" target="_blank" rel="noopener noreferrer" class="github-link">
                 <img src="public/icons/github(1).svg" alt="GitHub de Cristian del Castillo" width="30"></a>
@@ -135,6 +144,10 @@
             <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
                 <img src="public/icons/whatsapp.svg" alt="WhatsApp de Cristian del Castillo" width="30"></a>
         </div>
+        <div class="footertres">
+            <hr>
+            <p>© 2026 CD. Todos los derechos reservados.</p>
+        </div>|
     </footer>
 </body>
 

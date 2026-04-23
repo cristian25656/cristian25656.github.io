@@ -1,8 +1,22 @@
 footer { display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: end;
 }
 .footeruno {
     display: flex;
     gap: 10px;
+    padding: 5px;
 }
+.footerdos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+.footertres {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;   
+}
+
