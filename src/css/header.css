@@ -8,6 +8,8 @@
         margin: 0px;
         border-radius: 20px;
         background-color: darkgray; 
+        border: 7px solid rgba(119, 56, 56, 0.299); /* es */
+        
 }
 .none li:first-child {
     margin-right: auto;

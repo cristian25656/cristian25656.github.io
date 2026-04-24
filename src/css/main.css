@@ -7,6 +7,8 @@
     padding: 19px;
     margin: 40px;
     gap: 150px;
+    border: 7px solid rgba(119, 56, 56, 0.299); /* es para los bordes */
+    
 }
 #sobremi p{ max-width: 300px;
             text-align: left;

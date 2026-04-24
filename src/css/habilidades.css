@@ -5,22 +5,22 @@
     flex-direction: column;
     justify-content: center;
     margin: 40px;
+    border: 7px solid rgba(119, 56, 56, 0.299); /* es */
 }
 .containerhabilidades h2{
     text-align: center;
     align-items: center;
     margin: 10px;
-    
 }
 .habilidades {
     display: grid;
     grid-template-columns: 400px 2fr 2fr;
     grid-template-rows: 150px auto;
-    grid-gap: 15px;
+    grid-gap: 20px;
     border-radius: 10px;
     background-color: rgb(172, 169, 153);
-    padding: 20px;
-    margin: 40px;
+    padding: 5px;
+    margin: 20px;
 }
 .habilidadesdiv {
     display: flex;
