@@ -1,16 +1,17 @@
-.containerhabilidades{
-    background-color: rgb(148, 95, 31); 
+.containerhabilidades {
+    background-color: #2D2D44;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 40px;
-    border: 7px solid rgba(119, 56, 56, 0.299); /* es */
+    border: 7px solid #E8E4DC;
 }
-.containerhabilidades h2{
+.containerhabilidades h2 {
     text-align: center;
     align-items: center;
     margin: 10px;
+    color: #C9A96E;
 }
 .habilidades {
     display: grid;
@@ -18,7 +19,7 @@
     grid-template-rows: 150px auto;
     grid-gap: 20px;
     border-radius: 10px;
-    background-color: rgb(172, 169, 153);
+    background-color: #F5F5F0;
     padding: 5px;
     margin: 20px;
 }
@@ -27,6 +28,8 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    background-color: rgb(158, 193, 53) ;
-    
+    background-color: #FFFFFF;
+    border: 1px solid #E8E4DC;
+    border-radius: 10px;
+    color: #1C1C2E;
 }

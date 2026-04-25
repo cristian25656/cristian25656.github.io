@@ -1,32 +1,81 @@
 .none {
-        display: flex;             
-        justify-content: flex-end; 
-        align-items: center;
-        list-style: none;          
-        gap: 10px;                 
-        padding: 10px; 
-        margin: 0px;
-        border-radius: 20px;
-        background-color: darkgray; 
-        border: 7px solid rgba(119, 56, 56, 0.299); /* es */
-        
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 20px;
+    background-color: #1C1C2E;
+    border: 7px solid #E8E4DC;
 }
+
 .none li:first-child {
     margin-right: auto;
 }
-.por {  display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        font-weight:bold;
-        box-shadow: 2px 2px 5px (#fad9a6);
-        height: 2vmax;
-        padding: 0 1vmax; 
-        background-color: #fad9a6;
+
+.none h2 {
+    font-size: 1.2rem;
+    /* Se usa para títulos o textos que necesitan destacar un poco más sin usar un tamaño fijo en px.
+    (para recordar) */
+    color: #C9A96E;
 }
+
+.por {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #1C1C2E;
+    height: auto;
+    padding: 8px 16px;
+    background-color: #C9A96E;
+    color: #1C1C2E;
+    border: none;
+}
+
 .por:hover {
-        transform: scale(1.05);  
-        outline: 1px solid rgb(222, 33, 33); 
+    transform: scale(1.05);
+    outline: 1px solid #C9A96E;
+}
+.hamburguesa {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #C9A96E;
+}
+
+@media (max-width: 767px) {
+    .none {
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        height: auto;
+        padding: 10px;
+    }
+    .none li:first-child {
+        flex: 1;
+    }
+    .hamburguesa {
+        display: block;
+    }
+    
+    .nav-item {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-item.activo {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item .por {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+}
 }

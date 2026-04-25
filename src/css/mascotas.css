@@ -1,30 +1,61 @@
-.nono { display: flex;             
-        justify-content: flex-end; 
-        list-style: none;          
-        color: #fad9a6; 
-        border-radius: 20px;
-        font-size: 0.9rem;
-        font-weight:bold;
-        box-shadow: 2px 2px 5px (#fad9a6);
-        height: 2vmax;
-        padding: 0 1vmax;     
+.nono {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: #1C1C2E;
+    color: #C9A96E;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px #1C1C2E;
+    height: auto;
+    padding: 15px;
 }
-.nono li:first-child {
-    margin-right: auto;
+.mismascotaseccionuno {
+    background-color: #2D2D44;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    border: 7px solid #E8E4DC;
 }
-#mismascotas { display: flex;
-     justify-content: first baseline;
+.mismascotaseccionuno h2 {
+    text-align: center;
+    margin: 10px;
+    color: #C9A96E;
 }
-#cloe { display: flex;
-        justify-content: end;
+/* Galería: grid para el layout general */
+.miscotassecciondos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    grid-template-rows: 420px auto;
+    grid-gap: 20px;
+    border-radius: 10px;
+    background-color: #F5F5F0;
+    padding: 5px;
+    margin: 20px;
+    flex-wrap: wrap;
 }
-.mascotas { cursor: pointer;
-            transition: transform 0.3s ease, outline 0.2s ease;
-            border-radius: 10%;
-            flex-shrink: 0;
-            box-shadow: 4px 4px 10px rgba(0,0,0,1);
+/* Tarjeta: flexbox para organizar imagen y texto */
+.mascotauno {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #251f4e9c;
+    border: 1px solid #E8E4DC;
+    border-radius: 10px;
+    color: #1C1C2E;
 }
-.mascotas:hover{ 
-                   transform: scale(1.05);       
-                   outline: 1px solid rgb(0,0,0); 
+footer a {
+    color: #C9A96E;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: #F5F5F0;
 }

@@ -1,13 +1,133 @@
-body {background-color: blanchedalmond;
- color: black;
- font-family: 'Roboto', sans-serif;
- min-height: 100vh;
- padding: 0px;
- margin: 0px;
+:root {
+    /* Colores */
+    --color-fondo: #F5F5F0;
+    --color-primario: #1C1C2E;
+    --color-secundario: #2D2D44;
+    --color-acento: #C9A96E;
+    --color-borde: #E8E4DC;
+    --color-texto-suave: #6B7280;
+
+    /* Tipografía */
+    --fuente-principal: 'Roboto', sans-serif;
+    --fuente-base: 1rem;
+    --fuente-titulo: 1.2rem;
+}
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    font-family: var(--fuente-principal); 
+    font-size: var(--fuente-base);
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
 }
 .logomascota {
-    font-size: 1.8rem;
+    font-size: 1.8rem;  /* font-size: 1rem en el body establece el tamaño base de toda la página.
+1rem equivale por defecto a 16px en el navegador.
+(este comentario es para que no se me olvide el valor de este stylo) */
     font-weight: 800;
-    color: #1f2937; 
+    color: #C9A96E;
     letter-spacing: -1px;
+}
+/* ===== MEDIA QUERIES ===== */
+
+/* X-Small — menos de 576px (móvil pequeño) */
+@media (max-width: 575px) {
+    .none {
+        height: auto;
+        padding: 10px;
+    }
+
+    .none li:first-child {
+        margin-right: 0;
+    }
+
+    #sobremi {
+        flex-direction: column;
+        gap: 20px;
+        margin: 15px;
+    }
+
+    .containerhabilidades {
+        margin: 15px;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+    }
+
+    .miscotassecciondos {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+/* Small — 576px a 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .none {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    #sobremi {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px;
+    }
+
+    .habilidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .miscotassecciondos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium — 768px a 991px (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .none {
+        height: auto;
+        padding: 10px;
+    }
+
+    #sobremi {
+        gap: 50px;
+        margin: 25px;
+    }
+
+    .habilidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .miscotassecciondos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Large — 992px a 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .habilidades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .miscotassecciondos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Extra large y Extra extra large — 1200px en adelante */
+@media (min-width: 1200px) {
+    .habilidades {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .miscotassecciondos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

@@ -1,7 +1,10 @@
-footer { display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: end;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    background-color: #1C1C2E;
+    padding: 10px 20px;
 }
 .footeruno {
     display: flex;
@@ -13,10 +16,22 @@ footer { display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
+    color: #F5F5F0;
+}
+.footerdos strong {
+    color: #C9A96E;
 }
 .footertres {
     width: 100%;
     text-align: center;
-    margin-top: 0px;   
+    margin-top: 0px;
+    color: #6B7280;
+}
+.footertres hr {
+    border-color: #2D2D44;
+}
+.footeruno a:hover img {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
 }
 

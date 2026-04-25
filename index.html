@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -29,13 +29,14 @@
                 <li>
                     <h2 onclick="location.href='#sobremi'"> Cristian David Del Castillo Ruiz </h2>
                 </li>
-                <li><button class="por" type="button" style="width: 6vmax; height: 2vmax;"
+                 <li class="hamburguesa" onclick="toggleMenu()">☰</li>
+                <li class="nav-item"><button class="por" type="button" style="width: 6vmax; height: 2vmax;"
                         onclick="location.href='#sobremi'">Inicio</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
+                <li class="nav-item"><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
                         onclick="location.href='#containerhabilidades'">Habilidades</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
+                <li class="nav-item"><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
                         onclick="location.href='#contacto'">contacto</button></li>
-                <li><button class="por" type="button" style="width: 8vmax; height: 2vmas;"
+                <li class="nav-item"><button class="por" type="button" style="width: 8vmax; height: 2vmax;"
                         onclick="location.href='mascotas.html'">Mascotas</button></li>
             </ul>
         </nav>
@@ -43,6 +44,7 @@
 
     <main>
         <section id="sobremi">
+            <button class="por" onclick="cambiarTexto()">Conóceme más</button>
             <p> Mi nombre es <strong>Cristian Del Castillo</strong>
                 soy un <span style="color: rgb(206, 26, 26);">desarrollador</span>
                 junior de 23 años apasionado por la tecnología y el
@@ -58,6 +60,7 @@
 
         <section class="containerhabilidades">
             <h2 id="containerhabilidades">Habilidades</h2>
+            <button class="por" onclick="toggleHabilidades()">Mostrar/Ocultar habilidades</button>
             <section class="habilidades">
                 <article class="habilidadesdiv">
                     <p> <strong>Python</strong> <br>
@@ -123,7 +126,7 @@
             <strong style="margin: 2px;">Cristian Del Castillo</strong>
             <p style="margin: 2px;">Diseñando el futuro, línea por línea.</p>
         </div>
-
+ 
         <div class="footeruno">
             <a href="https://github.com/cristian25656" target="_blank" rel="noopener noreferrer" class="github-link">
                 <img src="public/icons/github(1).svg" alt="GitHub de Cristian del Castillo" width="30"></a>
@@ -138,6 +141,7 @@
             <p>© 2026 CD. Todos los derechos reservados.</p>
         </div>|
     </footer>
+     <script src="script.js"></script>
 </body>
 
 </html>

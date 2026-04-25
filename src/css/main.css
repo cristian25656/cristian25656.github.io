@@ -3,13 +3,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: darkgray;
+    background-color: #FFFFFF;
     padding: 19px;
     margin: 40px;
-    gap: 150px;
-    border: 7px solid rgba(119, 56, 56, 0.299); /* es para los bordes */
-    
+    gap: 50px;
+    border: 7px solid #E8E4DC;
+    flex-wrap: wrap;    
 }
-#sobremi p{ max-width: 300px;
-            text-align: left;
+#sobremi p {
+    max-width: 300px;
+    text-align: left;
+    color: #1C1C2E;
+    flex: 1;
+    min-width: 200px;
 }

@@ -6,7 +6,7 @@
     box-shadow: 4px 4px 10px rgba(0,0,0,1);
     height: 300px;
     width: 240px;
-    
+    max-width: 100%
 }
 #imagenuno:hover { 
         transform: scale(1.05);        
@@ -19,7 +19,23 @@
     flex-shrink: 0;
     width: 100px;
     height: 100px;
+    max-width: 100%;  /* le dice a la imagen que nunca sea más ancha que su contenedor. */
 }
 .imagenhabilidades:hover {
     transform: scale(1.05);        
+}
+.mascotas {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease, outline 0.2s ease;
+    border-radius: 10%;
+    flex-shrink: 0;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+.mascotas:hover {
+    transform: scale(1.05);
+    outline: 1px solid rgb(0,0,0);
 }
